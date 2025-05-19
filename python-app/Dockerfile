@@ -1,5 +1,3 @@
-# Use a minimal base image
-FROM alpine:latest
-
-# Define the command to run when the container starts
-CMD ["echo", "Hello, World!"]
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html
+EXPOSE 80
