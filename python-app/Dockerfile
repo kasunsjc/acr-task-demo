@@ -1,5 +1,5 @@
-FROM python:3.9
-WORKDIR /app
-COPY . .
-# CMD
-CMD ["python", "app.py"]
+# Use a minimal base image
+FROM alpine:latest
+
+# Define the command to run when the container starts
+CMD ["echo", "Hello, World!"]
